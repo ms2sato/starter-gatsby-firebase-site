@@ -53,7 +53,9 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ act
       alias: {
         "@/components": path.resolve(__dirname, "src/components"),
         "@/lib/utils": path.resolve(__dirname, "src/lib/utils"),
+        "@/components/ui": path.resolve(__dirname, "src/components/ui"),
       },
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
   })
 }
