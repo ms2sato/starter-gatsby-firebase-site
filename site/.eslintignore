@@ -1,0 +1,12 @@
+node_modules/
+bin
+public
+
+config
+
+.eslintrc.js
+tailwind.config.js
+
+ui
+.storybook/
+.storybook-static/

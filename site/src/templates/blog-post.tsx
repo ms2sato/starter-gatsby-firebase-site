@@ -12,7 +12,6 @@ const BlogPostTemplate: FC<PageProps<Queries.BlogPostBySlugQuery>> = ({
   return (
     <Layout>
       <div className={styles.container}>
-        <h1>{post?.title ?? 'Untitled'}</h1>
         <div className={styles.article}>
           <div className={styles.body}>{body && <Markdown text={body} />}</div>
           {(previous || next) && (
